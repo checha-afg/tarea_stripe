@@ -1,7 +1,7 @@
 import Stripe from 'stripe'
 
-//esto de aca es la clave secreta de MI SPRITE, si queremos redirigirlo a otro hay que usar una clave secreta diferente
-const stripe = new Stripe('sk_test_51Q8MmwRxazJ4JItPwJYkyXjAp0yzeDq8wjiGwsIKQWk1SiAnZvnWpmqVxfsX5Tma0RdViSuf8FUrcDvlst3yqoCl00irXJTGlO')
+//AQUI deberia ir su clave secreta de stripe
+const stripe = new Stripe('')
 
 export const createSession = async (req,res) => {
     const session = await stripe.checkout.sessions.create({
